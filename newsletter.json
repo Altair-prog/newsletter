@@ -1,0 +1,43 @@
+[
+  {
+    "model": "mail.client",
+    "pk": 1,
+    "fields": {
+      "email": "alex@yandex.ru",
+      "name": "Alex",
+      "comment": "постоянный клиент"
+    }
+  },
+  {
+    "model": "mail.client",
+    "pk": 2,
+    "fields": {
+      "email": "annas@yandex.ru",
+      "name": "Анна",
+      "comment": "новый клиент"
+    }
+  },
+  {
+    "model": "mail.newsletter",
+    "pk": 1,
+    "fields": {
+      "name": "Рассылка праздничная",
+      "start_date": "2024-07-29",
+      "frequency": "Ежедневно",
+      "status": "Создана",
+      "message": 1,
+      "clients": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "mail.message",
+    "pk": 1,
+    "fields": {
+      "subject": "Новый год",
+      "text": "Скоро новый год!"
+    }
+  }
+]
